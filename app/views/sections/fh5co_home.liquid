@@ -1,0 +1,61 @@
+---
+{
+  "name": "Home",
+  "icon": "header",
+  "keep_label": true,
+  "settings": [
+    {
+      "label": "Show Home",
+      "id": "show",
+      "type": "checkbox"
+    },
+    {
+      "label": "Title",
+      "id": "title",
+      "type": "text"
+    },
+    {
+      "label": "SubTitle",
+      "id": "subitle",
+      "type": "text",
+      "html": true
+    }
+  ],
+  "blocks": [
+    {
+      "name": "image",
+      "type": "image",
+      "settings": [
+        {
+          "label": "file",
+          "id": "file",
+          "type": "image_picker"
+        }
+      ]
+    }
+  ],
+  "presets": []
+}
+---
+{% if section.settings.show == true %}
+<div id="fh5co-home" class="js-fullheight" data-section="home">
+  <div class="flexslider">
+    <div class="fh5co-overlay"></div>
+    <div class="fh5co-text">
+      <div class="container">
+        <div class="row">
+          <h1 class="to-animate">{{ section.settings.title }}</h1>
+          <h2 class="to-animate">{{ section.settings.subtitle }}</h2>
+        </div>
+      </div>
+    </div>
+      <ul class="slides">
+      {% for block in section.blocks %}
+      <li style="background-image: url({{ block.settings.image }});" data-stellar-background-ratio="0.5"></li>
+      {% endfor %}
+      </ul>
+  </div>
+</div>
+{% else %}
+{% session_assign home == nil %}
+{% endif %}
