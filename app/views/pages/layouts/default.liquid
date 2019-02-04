@@ -1,0 +1,43 @@
+---
+title: Default layout
+is_layout: false
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% seo %}
+    {% include 'styles' %}
+    {% comment %}{{ 'bundle.css' | stylesheet_tag }}{% endcomment %}
+  </head>
+  <body>
+    <div id="fh5co-container">
+    {% block 'main' %}
+    {% endblock %}
+    </div>
+    <div id="fh5co-footer">
+      <div class="container">
+        <div class="row row-padded">
+          <div class="col-md-12 text-center">
+            <p class="to-animate">&copy; 2016 Foodee HTML5 Template. <br> Demo images: <a href="http://pexels.com/" target="_blank">Pexels</a> <br> Tasty Icons Free <a href="http://handdrawngoods.com/store/tasty-icons-free-food-icons/" target="_blank">handdrawngoods</a>
+            </p>
+            <p class="text-center to-animate"><a href="#" class="js-gotop">Go To Top</a></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <ul class="fh5co-social">
+              <li class="to-animate-2"><a href="#"><i class="icon-facebook"></i></a></li>
+              <li class="to-animate-2"><a href="#"><i class="icon-twitter"></i></a></li>
+              <li class="to-animate-2"><a href="#"><i class="icon-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% include 'scripts' %}
+    {{ 'bundle.js' | javascript_tag }}
+    {% if wagon %}<script src="http://localhost:35729/livereload.js"></script>{% endif %}
+  </body>
+</html>
