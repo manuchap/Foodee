@@ -12,7 +12,8 @@ document.addEventListener('DOMContentLoaded', event => {
   const sectionsManager = new SectionsManager();
 
   // Register sections here. DO NOT REMOVE OR UPDATE THIS LINE
-  sectionsManager.registerSection('fh5co_home', Sections.Fh5coHome);
+  sectionsManager.registerSection('about', Sections.About);
+  sectionsManager.registerSection('fh5co_home', Sections.Home);
 
   sectionsManager.start();
 

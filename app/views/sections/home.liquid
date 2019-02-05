@@ -17,8 +17,7 @@
     {
       "label": "SubTitle",
       "id": "subitle",
-      "type": "text",
-      "html": true
+      "type": "text"
     }
   ],
   "blocks": [
@@ -29,7 +28,7 @@
         {
           "label": "file",
           "id": "file",
-          "type": "image_picker"
+          "type": "url"
         }
       ]
     }
@@ -56,6 +55,4 @@
       </ul>
   </div>
 </div>
-{% else %}
-{% session_assign home == nil %}
 {% endif %}

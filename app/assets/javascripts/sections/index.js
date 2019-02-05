@@ -3,4 +3,5 @@
 // Example:
 // export { default as Hero } from './hero';
 //
-export { default as Fh5coHome } from './fh5co_home';
+export { default as Fh5coHome } from './home';
+export { default as About } from './about';
