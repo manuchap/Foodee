@@ -38,6 +38,11 @@
       "label": "BtnLink",
       "id": "btnlink",
       "type": "url"
+    },
+    {
+      "label": "Quotes",
+      "id": "quotes",
+      "type": "checkbox"
     }
   ],
   "blocks": [],
@@ -53,4 +58,24 @@
       {% if section.settings.btn == true %}<p class="text-center to-animate"><a href="{{ section.settings.btnlink }}" class="btn btn-primary btn-outline">{{ section.settings.btntext }}</a></p>{% endif %}
     </div>
   </div>
+{% if section.settings.quotes == true %}
+  <div id="fh5co-sayings">
+    <div class="container">
+      <div class="row to-animate">
+        <div class="flexslider">
+          <ul class="slides">
+            {% for quote in contents.quotes %}
+            <li>
+              <blockquote>
+                <p>&ldquo;{{ quote.quote }}&rdquo;</p>
+                <p class="quote-author">&mdash; {{ quote.author }}</p>
+              </blockquote>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}
 {% endif %}

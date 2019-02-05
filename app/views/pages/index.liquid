@@ -38,7 +38,8 @@ sections_content: >
         "text": "<span class=\"firstcharacter\">F</span>ar far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life.",
         "btn": true,
         "btntext": "Get in touch",
-        "btnlink": "#"
+        "btnlink": "#",
+        "quotes": true
       }
     }
   }
@@ -46,66 +47,8 @@ sections_content: >
 {% extends layouts/default %}
 {% block 'main' %}
   {% section 'home', placement: 'top' %}
-  <div class="js-sticky">
-    <div class="fh5co-main-nav">
-      <div class="container-fluid">
-        <div class="fh5co-menu-1">
-      <a href="#" data-nav-section="home">Home</a>
-          <a href="#" data-nav-section="about">About</a>
-          <a href="#" data-nav-section="features">Features</a>
-        </div>
-        <div class="fh5co-logo">
-          <a href="index.html">foodee</a>
-        </div>
-        <div class="fh5co-menu-2">
-          <a href="#" data-nav-section="menu">Menu</a>
-          <a href="#" data-nav-section="events">Events</a>
-          <a href="#" data-nav-section="reservation">Reservation</a>
-        </div>
-      </div>
-
-    </div>
-  </div>
+  {% include 'nav' %}
   {% section 'about' %}
-  <div id="fh5co-sayings">
-    <div class="container">
-      <div class="row to-animate">
-
-        <div class="flexslider">
-          <ul class="slides">
-
-            <li>
-              <blockquote>
-                <p>&ldquo;Cooking is an art, but all art requires knowing something about the techniques and materials&rdquo;</p>
-                <p class="quote-author">&mdash; Nathan Myhrvold</p>
-              </blockquote>
-            </li>
-            <li>
-              <blockquote>
-                <p>&ldquo;Give a man food, and he can eat for a day. Give a man a job, and he can only eat for 30 minutes on break.&rdquo;</p>
-                <p class="quote-author">&mdash; Lev L. Spiro</p>
-              </blockquote>
-            </li>
-            <li>
-              <blockquote>
-                <p>&ldquo;Find something you’re passionate about and keep tremendously interested in it.&rdquo;</p>
-                <p class="quote-author">&mdash; Julia Child</p>
-              </blockquote>
-            </li>
-            <li>
-              <blockquote>
-                <p>&ldquo;Never work before breakfast; if you have to work before breakfast, eat your breakfast first.&rdquo;</p>
-                <p class="quote-author">&mdash; Josh Billings</p>
-              </blockquote>
-            </li>
-
-
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </div>
   <div id="fh5co-featured" data-section="features">
     <div class="container">
       <div class="row text-center fh5co-heading row-padded">
