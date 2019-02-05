@@ -1,0 +1,56 @@
+---
+{
+  "name": "About",
+  "icon": "image_text",
+  "settings": [
+    {
+      "label": "Show About",
+      "id": "show",
+      "type": "checkbox"
+    },
+    {
+      "label": "Image",
+      "id": "image",
+      "type": "url"
+    },
+    {
+      "label": "Title",
+      "id": "title",
+      "type": "text"
+    },
+    {
+      "label": "Text",
+      "id": "text",
+      "type": "text",
+      "html": true
+    },
+    {
+      "label": "Btn",
+      "id": "btn",
+      "type": "checkbox"
+    },
+    {
+      "label": "BtnText",
+      "id": "btntext",
+      "type": "text"
+    },
+    {
+      "label": "BtnLink",
+      "id": "btnlink",
+      "type": "url"
+    }
+  ],
+  "blocks": [],
+  "presets": []
+}
+---
+{% if section.settings.show == true %}
+  <div id="fh5co-about" data-section="about">
+    <div class="fh5co-2col fh5co-bg to-animate-2" style="background-image: url({{ section.settings.image }})"></div>
+    <div class="fh5co-2col fh5co-text">
+      <h2 class="heading to-animate">{{ section.settings.title }}</h2>
+      <p class="to-animate">{{ section.settings.text }}</p>
+      {% if section.settings.btn == true %}<p class="text-center to-animate"><a href="{{ section.settings.btnlink }}" class="btn btn-primary btn-outline">{{ section.settings.btntext }}</a></p>{% endif %}
+    </div>
+  </div>
+{% endif %}
