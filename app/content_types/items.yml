@@ -1,0 +1,44 @@
+name: Items
+slug: items
+description: A description of the content type for the editors
+label_field_name: name
+order_by: manually
+group_by: type
+fields:
+- name:
+    label: Name
+    type: string
+    required: true
+    hint: Explanatory text displayed in the back office
+    localized: false
+- type:
+    label: Type
+    type: select
+    required: false
+    hint: Explanatory text displayed in the back office
+    localized: false
+    select_options: ['drink', 'fish', 'meat', 'vegetable', 'seafood', 'dessert']
+- desc:
+    label: Desc
+    type: text
+    required: false
+    hint: Explanatory text displayed in the back office
+    localized: false
+- price:
+    label: Price
+    type: float
+    required: false
+    hint: Explanatory text displayed in the back office
+    localized: false
+- photo:
+    label: Photo
+    type: file
+    required: false
+    hint: Explanatory text displayed in the back office
+    localized: false
+- featured:
+    label: Featured
+    type: boolean
+    required: false
+    hint: Explanatory text displayed in the back office
+    localized: false
