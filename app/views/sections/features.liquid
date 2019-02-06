@@ -23,6 +23,11 @@
       "label": "Footer",
       "id": "footer",
       "type": "checkbox"
+    },
+    {
+      "label": "Footer background",
+      "id": "image",
+      "type": "url"
     }
   ],
   "blocks": [
@@ -123,7 +128,7 @@
     </div>
   </div>
 {% if section.settings.footer == true %}
-  <div id="fh5co-type" style="background-image: url(https://freehtml5.co/demos/foodee/images/slide_3.jpg);" data-stellar-background-ratio="0.5">
+  <div id="fh5co-type" style="background-image: url({{ section.settings.image }});" data-stellar-background-ratio="0.5">
     <div class="fh5co-overlay"></div>
     <div class="container">
       <div class="row">
