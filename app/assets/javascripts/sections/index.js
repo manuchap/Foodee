@@ -8,3 +8,4 @@ export { default as About } from './about';
 export { default as Feature } from './features';
 export { default as Menu } from './menu';
 export { default as Event } from './events';
+export { default as Reservation } from './reservation';

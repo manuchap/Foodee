@@ -28,21 +28,21 @@
 #
 # Simple example:
 #
-# shop:
-#   label: My shop location
-#   fields:
-#     address:
-#       type: string
-#       hint: "Ex: 7 allee Albert Camus"
-#     city:
-#       type: string
-#       hint: "Chicago, Paris, Blagnac, Toulouse"
-#     zip_code:
-#       type: string
-#       hint: "Digits only"
-#     hours:
-#       type: text
-#       hint: "Free text here"
+shop:
+  label: My shop location
+  fields:
+    address:
+      type: text
+      hint: "Ex: 7 allee Albert Camus"
+    tel:
+      type: string
+      hint: "Chicago, Paris, Blagnac, Toulouse"
+    mail:
+      type: string
+      hint: "Digits only"
+    hours:
+      type: text
+      hint: "Free text here"
 # theme:
 #   fields:
 #     background_image:
