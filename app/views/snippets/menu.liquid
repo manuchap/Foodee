@@ -1,48 +1,4 @@
----
-{
-  "name": "Menu",
-  "icon": "list",
-  "keep_icon": true,
-  "keep_label": true,
-  "settings": [
-    {
-      "label": "Show Menu",
-      "id": "show",
-      "type": "checkbox"
-    },
-    {
-      "label": "Title",
-      "id": "title",
-      "type": "text"
-    },
-    {
-      "label": "SubTitle",
-      "id": "subtitle",
-      "type": "text",
-      "html": true
-    },
-    {
-      "label": "Btn",
-      "id": "btn",
-      "type": "checkbox"
-    },
-    {
-      "label": "BtnText",
-      "id": "btntext",
-      "type": "text"
-    },
-    {
-      "label": "BtnLink",
-      "id": "btnlink",
-      "type": "url"
-    }
-  ],
-  "blocks": [],
-  "presets": []
-}
----
-{% if section.settings.show == true %}
-  <div id="fh5co-menus" data-section="menu">
+<div id="fh5co-menus">
     <div class="container">
       <div class="row text-center fh5co-heading row-padded">
         <div class="col-md-8 col-md-offset-2">
@@ -52,7 +8,7 @@
       </div>
       <div class="row row-padded">
         <div class="col-md-6">
-          <div class="fh5co-food-menu to-animate-2">
+          <div class="fh5co-food-menu to-animate-2" data-section="drinks">
             <h2 class="fh5co-drinks">Drinks</h2>
             <ul>
               {% with_scope type: 'drinks' %}
@@ -77,11 +33,11 @@
           </div>
         </div>
         <div class="col-md-6">
-          <div class="fh5co-food-menu to-animate-2">
+          <div class="fh5co-food-menu to-animate-2" data-section="meats">
             <h2 class="fh5co-dishes">Steak</h2>
             <ul>
               {% with_scope type: 'meats' %}
-              {% for item in contents.items | limit: 4 %}
+              {% for item in contents.items %}
               <li>
                 <div class="fh5co-food-desc">
                   <figure>
@@ -102,13 +58,5 @@
           </div>
         </div>
       </div>
-      {% if section.settings.btn == true %}
-      <div class="row">
-        <div class="col-md-4 col-md-offset-4 text-center to-animate-2">
-          <p><a href="{{ section.settings.btnlink }}" class="btn btn-primary btn-outline">{{ section.settings.btntext }}</a></p>
-        </div>
-      </div>
-      {% endif %}
     </div>
   </div>
-{% endif %}
