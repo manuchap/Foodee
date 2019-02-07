@@ -1,0 +1,42 @@
+---
+{
+  "name": "Footer",
+  "icon": "footer",
+  "keep_icon": true,
+  "keep_label": true,
+  "settings": [
+    {
+      "label": "Text",
+      "id": "text",
+      "type": "text",
+      "html": true
+    },
+    {
+      "label": "Show Social Links",
+      "id": "show",
+      "type": "checkbox"
+    }
+  ]
+}
+---
+<div id="fh5co-footer">
+  <div class="container">
+    <div class="row row-padded">
+      <div class="col-md-12 text-center">
+        <p class="to-animate">{{ section.settings.text }}</p>
+        <p class="text-center to-animate"><a href="#" class="js-gotop">Go To Top</a></p>
+      </div>
+    </div>
+    {% if section.settings.show == true %}
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <ul class="fh5co-social">
+          <li class="to-animate-2"><a href="{{ site.metafields.social.facebook }}"><i class="icon-facebook"></i></a></li>
+          <li class="to-animate-2"><a href="{{ site.metafields.social.twitter }}"><i class="icon-twitter"></i></a></li>
+          <li class="to-animate-2"><a href="{{ site.metafields.social.instagram }}"><i class="icon-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</div>

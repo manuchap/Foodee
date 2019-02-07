@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', event => {
   const sectionsManager = new SectionsManager();
 
   // Register sections here. DO NOT REMOVE OR UPDATE THIS LINE
+  sectionsManager.registerSection('footer', Sections.Footer);
   sectionsManager.registerSection('reservation', Sections.Reservation);
   sectionsManager.registerSection('events', Sections.Event);
   sectionsManager.registerSection('menu', Sections.Menu);
