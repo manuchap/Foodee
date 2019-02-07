@@ -1,36 +1,84 @@
 - "Fresh Mushrooms":
-    type: null
+    type: starters
     desc: "Architecto voluptatibus tempora. Non temporibus quia. Vel laborum velit."
-    photo: "/images/res_img_1.jpg"
+    photo: "/samples/res_img_1.jpg"
     price: 7.50
     featured: true
 - "Grilled Chiken Salad":
-    type: null
+    type: starters
     desc: "Voluptate ipsa non. Rerum aut quo. Alias enim reprehenderit."
-    photo: "/images/res_img_2.jpg"
+    photo: "/samples/res_img_2.jpg"
     price: 12.00
     featured: true
 - "Cheese and Garlic Toast":
-    type: null
+    type: starters
     desc: "Eos omnis veniam. Est soluta illo. Voluptatem iste id."
-    photo: "/images/res_img_8.jpg"
+    photo: "/samples/res_img_8.jpg"
     price: 4.50
     featured: true
 - "Organic Egg":
-    type: null
+    type: starters
     desc: "Corrupti laboriosam et. Illo vel facere. Distinctio consequatur cumque."
-    photo: "/images/res_img_7.jpg"
+    photo: "/samples/res_img_7.jpg"
     price: 4.99
     featured: true
 - "Salad with Crispy Chicken":
-    type: null
+    type: starters
     desc: "Corrupti laboriosam et. Illo vel facere. Distinctio consequatur cumque."
-    photo: "/images/res_img_6.jpg"
+    photo: "/samples/res_img_6.jpg"
     price: 8.59
     featured: true
 - "Tomato Soup with Chicken":
-    type: null
+    type: starters
     desc: "Corrupti laboriosam et. Illo vel facere. Distinctio consequatur cumque."
-    photo: "/images/res_img_3.jpg"
+    photo: "/samples/res_img_3.jpg"
     price: 12.99
     featured: true
+- "Pineapple Juice":
+    type: drinks
+    desc: "Far far away, behind the word mountains."
+    photo: "/samples/res_img_5.jpg"
+    price: 17.50
+    featured: false
+- "Green Juice":
+    type: drinks
+    desc: "Far far away, behind the word mountains."
+    photo: "/samples/res_img_6.jpg"
+    price: 7.99
+    featured: false
+- "Soft Drinks":
+    type: drinks
+    desc: "Far far away, behind the word mountains."
+    photo: "/samples/res_img_7.jpg"
+    price: 12.99
+    featured: false
+- "Carlo Rosee Drinks":
+    type: drinks
+    desc: "Far far away, behind the word mountains."
+    photo: "/samples/res_img_5.jpg"
+    price: 12.99
+    featured: false
+- "Beef Steak":
+    type: meats
+    desc: "Far far away, behind the word mountains."
+    photo: "/samples/res_img_3.jpg"
+    price: 17.99
+    featured: false
+- "Tomato with Chicken":
+    type: meats
+    desc: "Far far away, behind the word mountains."
+    photo: "/samples/res_img_4.jpg"
+    price: 7.99
+    featured: false
+- "Sausages from Italy":
+    type: meats
+    desc: "Far far away, behind the word mountains."
+    photo: "/samples/res_img_2.jpg"
+    price: 12.99
+    featured: false
+- "Beef Grilled":
+    type: meats
+    desc: "Far far away, behind the word mountains."
+    photo: "/samples/res_img_8.jpg"
+    price: 12.99
+    featured: false

@@ -17,7 +17,7 @@ fields:
     required: false
     hint: Explanatory text displayed in the back office
     localized: false
-    select_options: ['drink', 'fish', 'meat', 'vegetable', 'seafood', 'dessert']
+    select_options: ['drinks', 'vegetables', 'starters', 'seafoods', 'fishes', 'meats', 'desserts']
 - desc:
     label: Desc
     type: text
