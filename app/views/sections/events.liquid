@@ -31,6 +31,7 @@
 }
 ---
 {% if section.settings.show == true %}
+<script type="text/javascript">document.getElementById("events").style.display = "inline-block";</script>
   <div id="fh5co-events" data-section="events" style="background-image: url({{ section.settings.image }});" data-stellar-background-ratio="0.5">
     <div class="fh5co-overlay"></div>
     <div class="container">
@@ -54,4 +55,6 @@
       </div>
     </div>
   </div>
+{% else %}
+<script type="text/javascript">document.getElementById("events").style.display = "none";</script>
 {% endif %}

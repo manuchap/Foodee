@@ -52,6 +52,7 @@
 }
 ---
 {% if section.settings.show == true %}
+<script type="text/javascript">document.getElementById("about").style.display = "inline-block";</script>
   <div id="fh5co-about" data-section="about">
     <div class="fh5co-2col fh5co-bg to-animate-2" style="background-image: url({{ section.settings.image }})"></div>
     <div class="fh5co-2col fh5co-text">
@@ -80,4 +81,6 @@
     </div>
   </div>
 {% endif %}
+{% else %}
+<script type="text/javascript">document.getElementById("about").style.display = "none";</script>
 {% endif %}

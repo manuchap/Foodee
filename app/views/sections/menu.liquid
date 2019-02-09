@@ -42,6 +42,7 @@
 }
 ---
 {% if section.settings.show == true %}
+<script type="text/javascript">document.getElementById("menu").style.display = "inline-block";</script>
   <div id="fh5co-menus" data-section="menu">
     <div class="container">
       <div class="row text-center fh5co-heading row-padded">
@@ -111,4 +112,6 @@
       {% endif %}
     </div>
   </div>
+{% else %}
+<script type="text/javascript">document.getElementById("menu").style.display = "none";</script>
 {% endif %}
