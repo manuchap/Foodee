@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', event => {
   sectionsManager.registerSection('menu', Sections.Menu);
   sectionsManager.registerSection('features', Sections.Feature);
   sectionsManager.registerSection('about', Sections.About);
-  sectionsManager.registerSection('fh5co_home', Sections.Home);
+  sectionsManager.registerSection('home', Sections.Home);
 
   sectionsManager.start();
 
