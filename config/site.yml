@@ -4,7 +4,7 @@ seo_title: foodee
 meta_keywords: "some meta keywords"
 meta_description: "some meta description"
 metafields_ui:
-  label: Store settings
+  label: Settings
   icon: gears
 metafields:
   shop:
