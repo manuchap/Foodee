@@ -1,5 +1,6 @@
 name: "foodee"
 locales: [en]
+timezone: Paris
 seo_title: foodee
 meta_keywords: "some meta keywords"
 meta_description: "some meta description"
