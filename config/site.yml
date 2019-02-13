@@ -5,7 +5,7 @@ meta_keywords: "some meta keywords"
 meta_description: "some meta description"
 metafields_ui:
   label: Settings
-  icon: gears
+  icon: home
 metafields:
   shop:
     address: 5555 Love Paradise 56 New Clity 5655,<br>Excel Tower United Kingdom
