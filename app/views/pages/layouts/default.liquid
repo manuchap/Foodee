@@ -18,7 +18,7 @@ is_layout: false
     </div>
     {% section footer, placement: 'bottom' %}
     {% include 'scripts' %}
-    {{ 'bundle.js' | javascript_tag }}
+    {% comment %}{{ 'bundle.js' | javascript_tag }}{% endcomment %}
     {% if wagon %}<script src="http://localhost:35729/livereload.js"></script>{% endif %}
   </body>
 </html>

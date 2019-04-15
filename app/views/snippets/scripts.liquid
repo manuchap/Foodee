@@ -6,6 +6,11 @@
 {{ 'bootstrap.min' | javascript_tag }}
 <!-- Bootstrap DateTimePicker -->
 {{ 'moment' | javascript_tag }}
+<script>
+  $(function () {
+       $('#date').datetimepicker();
+   });
+</script>
 {{ 'bootstrap-datetimepicker.min' | javascript_tag }}
 <!-- Waypoints -->
 {{ 'jquery.waypoints.min' | javascript_tag }}
@@ -13,10 +18,5 @@
 {{ 'jquery.stellar.min' | javascript_tag }}
 <!-- Flexslider -->
 {{ 'jquery.flexslider-min' | javascript_tag }}
-<script>
-  $(function () {
-       $('#date').datetimepicker();
-   });
-</script>
 <!-- Main JS -->
 {{ 'main' | javascript_tag }}
