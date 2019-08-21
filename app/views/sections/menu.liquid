@@ -72,7 +72,7 @@
                   </div>
                 </div>
                 <div class="fh5co-food-pricing">
-                  {{ item.price }}
+                  {{ item.price | money: unit: "$", format: "%n %u" }}
                 </div>
               </li>
               {% endfor %}
@@ -97,7 +97,7 @@
                   </div>
                 </div>
                 <div class="fh5co-food-pricing">
-                  {{ item.price }}
+                  {{ item.price | money: unit: "$", format: "%n %u" }}
                 </div>
               </li>
               {% endfor %}
