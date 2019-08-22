@@ -9,7 +9,6 @@ is_layout: false
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% seo %}
     {% include 'styles' %}
-    {% comment %}{{ 'bundle.css' | stylesheet_tag }}{% endcomment %}
   </head>
   <body>
     <div id="fh5co-container">
@@ -18,7 +17,6 @@ is_layout: false
     </div>
     {% section footer, placement: 'bottom' %}
     {% include 'scripts' %}
-    {% comment %}{{ 'bundle.js' | javascript_tag }}{% endcomment %}
     {% if wagon %}<script src="http://localhost:35729/livereload.js"></script>{% endif %}
   </body>
 </html>
