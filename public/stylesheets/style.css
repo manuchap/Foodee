@@ -323,11 +323,11 @@ p {
 .fh5co-main-nav .fh5co-logo a.active {
   color: #fb6e14;
 }
-.fh5co-main-nav .fh5co-menu-1 {
+/*.fh5co-main-nav .fh5co-menu-1 {
   text-align: right;
   width: 40.33%;
 }
-.fh5co-main-nav .fh5co-menu-1 a {
+*/.fh5co-main-nav .fh5co-menu-1 a {
   vertical-align: middle;
 }
 .fh5co-main-nav .fh5co-logo {
