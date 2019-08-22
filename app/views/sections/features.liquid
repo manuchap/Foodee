@@ -75,7 +75,7 @@
             <div class="fh5co-v-col-2 fh5co-bg-img" style="background-image: url({{ contents.items.first.photo.url }})"></div>
             <div class="fh5co-v-col-2 fh5co-text fh5co-special-1 arrow-left">
               <h2>{{ contents.items.first.name }}</h2>
-              <span class="pricing">${{ contents.items.first.price | money: unit: "$", format: "%n %u" }}</span>
+              <span class="pricing">{{ contents.items.first.price | money: unit: "€", format: "%n %u" }}</span>
               <p>{{ contents.items.first.desc }}</p>
             </div>
           </div>
@@ -84,7 +84,7 @@
               <div class="fh5co-v-col-2 fh5co-bg-img" style="background-image: url({{ contents.items.first.next.photo.url }})"></div>
               <div class="fh5co-v-col-2 fh5co-text arrow-left">
                 <h2>{{ contents.items.first.next.name }}</h2>
-                <span class="pricing">${{ contents.items.first.next.price | money: unit: "$", format: "%n %u" }}</span>
+                <span class="pricing">{{ contents.items.first.next.price | money: unit: "€", format: "%n %u" }}</span>
                 <p>{{ contents.items.first.next.desc }}</p>
               </div>
             </div>
@@ -92,7 +92,7 @@
               <div class="fh5co-v-col-2 fh5co-bg-img" style="background-image: url({{ contents.items.first.next.next.photo.url }})"></div>
               <div class="fh5co-v-col-2 fh5co-text arrow-right">
                 <h2>{{ contents.items.first.next.next.name }}</h2>
-                <span class="pricing">${{ contents.items.first.next.next.price | money: unit: "$", format: "%n %u" }}</span>
+                <span class="pricing">{{ contents.items.first.next.next.price | money: unit: "€", format: "%n %u" }}</span>
                 <p>{{ contents.items.first.next.next.desc }}</p>
               </div>
             </div>
@@ -102,7 +102,7 @@
               <div class="fh5co-v-col-2 fh5co-bg-img" style="background-image: url({{ contents.items.first.next.next.next.photo.url }})"></div>
               <div class="fh5co-v-col-2 fh5co-text arrow-right">
                 <h2>{{ contents.items.first.next.next.next.name }}</h2>
-                <span class="pricing">${{ contents.items.first.next.next.next.price | money: unit: "$", format: "%n %u" }}</span>
+                <span class="pricing">{{ contents.items.first.next.next.next.price | money: unit: "€", format: "%n %u" }}</span>
                 <p>{{ contents.items.first.next.next.next.desc }}</p>
               </div>
             </div>
@@ -110,7 +110,7 @@
               <div class="fh5co-v-col-2 fh5co-bg-img" style="background-image: url({{ contents.items.first.next.next.next.next.photo.url }})"></div>
               <div class="fh5co-v-col-2 fh5co-text arrow-left">
                 <h2>{{ contents.items.first.next.next.next.next.name }}</h2>
-                <span class="pricing">${{ contents.items.first.next.next.next.next.price | money: unit: "$", format: "%n %u" }}</span>
+                <span class="pricing">{{ contents.items.first.next.next.next.next.price | money: unit: "€", format: "%n %u" }}</span>
                 <p>{{ contents.items.first.next.next.next.next.desc }}</p>
               </div>
             </div>
@@ -119,7 +119,7 @@
             <div class="fh5co-v-col-2 fh5co-bg-img" style="background-image: url({{ contents.items.first.next.next.next.next.next.photo.url }}"></div>
             <div class="fh5co-v-col-2 fh5co-text fh5co-special-1 arrow-left">
               <h2>{{ contents.items.first.next.next.next.next.next.name }}</h2>
-              <span class="pricing">${{ contents.items.first.next.next.next.next.next.price | money: unit: "$", format: "%n %u" }}</span>
+              <span class="pricing">{{ contents.items.first.next.next.next.next.next.price | money: unit: "€", format: "%n %u" }}</span>
               <p>{{ contents.items.first.next.next.next.next.next.desc }}</p>
             </div>
           </div>
